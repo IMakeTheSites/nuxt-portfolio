@@ -16,8 +16,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { PropsDefinition } from 'vue/types/options'
+import { Post } from '~/store/posts'
+
 export default Vue.extend({
-  props: ['post'],
+  props: ['post'] as PropsDefinition<{ post: Post }>,
 })
 </script>
 

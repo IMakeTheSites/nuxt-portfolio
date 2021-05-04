@@ -20,25 +20,31 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { PostsState } from '~/store/posts'
+
+const postsCount = 5
+
 export default Vue.extend({
+  async asyncData({ store, query }) {
+    await store.dispatch('posts/getPosts', {
+      after: query.after,
+      before: query.before,
+      first: query.before ? undefined : postsCount,
+      last: query.before ? postsCount : undefined,
+    })
+  },
   computed: {
     posts() {
-      return [
-        {
-          title: 'Test Post',
-          slug: 'test-post',
-          content: '<p>This is a test post</p>',
-          excerpt: '<p>This is a test post.</p>',
-        },
-      ]
+      return (this.$store.state.posts as PostsState).posts
     },
     pageInfo() {
-      return {
-        endCursor: '',
-        hasNextPage: false,
-        hasPreviousPage: false,
-        startCursor: '',
-      }
+      return (this.$store.state.posts as PostsState).pageInfo
+    },
+  },
+  watch: {
+    async $route() {
+      await this.$nuxt.refresh()
+      window.scrollTo(0, 0)
     },
   },
 })
