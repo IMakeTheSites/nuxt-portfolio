@@ -1,24 +1,18 @@
 <template>
-  <header class="header">
-    <h1 class="title">I Make the Sites</h1>
-    <ul>
-      <li>
-        <nuxt-link to="/">Home</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/work">Work</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/about">About</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/blog">Blog</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/contact">Contact</nuxt-link>
-      </li>
-    </ul>
-  </header>
+  <div>
+    <b-navbar toggleable="md" type="dark" variant="warning">
+      <b-navbar-brand to="/">I Make the Sites</b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item to="/work">Work</b-nav-item>
+          <b-nav-item to="/about">About</b-nav-item>
+          <b-nav-item to="/blog">Blog</b-nav-item>
+          <b-nav-item to="/contact">Contact</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+  </div>
 </template>
 
 <script>
@@ -27,27 +21,4 @@ export default {
 }
 </script>
 
-<style>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dotted #ccc;
-}
-.header .title {
-  font-size: 3rem;
-  color: #526488;
-}
-.header ul {
-  display: flex;
-}
-.header a {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  margin-right: 0.5rem;
-}
-</style>
+<style></style>

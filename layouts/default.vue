@@ -21,7 +21,7 @@ export default {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.6;
   background: #f4f4f4;
 }
@@ -33,7 +33,7 @@ ul {
   list-style: none;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   overflow: hidden;
   padding: 1rem 2rem;

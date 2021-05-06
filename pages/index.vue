@@ -3,9 +3,29 @@
     <div>
       <h1 class="title">I Make the Sites</h1>
     </div>
-    <span class="icons"
+    <b-button href="https://twitter.com/imakethesites"
+      ><font-awesome-icon
+        :icon="{ prefix: 'fab', iconName: 'twitter' }"
+        style="color: #fff; font-size: 50px"
+    /></b-button>
+    <b-button href="https://www.linkedin.com/in/gowiththewlo/"
+      ><font-awesome-icon
+        :icon="{ prefix: 'fab', iconName: 'linkedin' }"
+        style="color: #fff; font-size: 50px"
+    /></b-button>
+    <b-button href="https://www.facebook.com/imakethesites"
+      ><font-awesome-icon
+        :icon="{ prefix: 'fab', iconName: 'facebook' }"
+        style="color: #fff; font-size: 50px"
+    /></b-button>
+    <b-button href="https://github.com/IMakeTheSites"
+      ><font-awesome-icon
+        :icon="{ prefix: 'fab', iconName: 'github' }"
+        style="color: #fff; font-size: 50px"
+    /></b-button>
+    <!-- <span class="icons"
       ><font-awesome-icon :icon="['fab', 'fa-twitter-square']"
-    /></span>
+    /></span> -->
   </div>
 </template>
 
