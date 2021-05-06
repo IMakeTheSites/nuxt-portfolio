@@ -1,8 +1,9 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title">I Make the Sites</h1>
-    </div>
+    <b-jumbotron
+      header="I Make the Sites"
+      lead="My brand new Nuxt.js portfolio and blog"
+    ></b-jumbotron>
     <b-button href="https://twitter.com/imakethesites"
       ><font-awesome-icon
         :icon="{ prefix: 'fab', iconName: 'twitter' }"
