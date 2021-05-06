@@ -20,11 +20,8 @@
     "core-js": "^3.9.1",
     "graphql": "^15.5.0",
     "isomorphic-fetch": "^3.0.0",
-    "netlify-lambda": "^2.0.6",
     "nuxt": "^2.15.3",
-    "storyblok-nuxt": "^2.0.1",
-    "vue-apollo": "^3.0.7",
-    "vuelidate": "^0.7.6"
+    "vue-apollo": "^3.0.7"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
