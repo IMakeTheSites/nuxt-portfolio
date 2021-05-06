@@ -68,7 +68,7 @@
       <b-card
         title="Datatape/Archetape"
         sub-title="React-Native Developer"
-        img-src="~/assets/datatapesite.jpg"
+        img-src="~/assets/dataTapeSite.jpg"
         img-alt="Datatape"
         img-top
         tag="article"
